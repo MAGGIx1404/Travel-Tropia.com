@@ -1,0 +1,1216 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  box-sizing: border-box;
+  font-family: 'Roboto',sans-serif;
+}
+/* start */
+/* header start */
+header{
+  height: 70vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  animation: jaat 16s ease-in-out infinite;
+}
+@keyframes jaat{
+  0%,100%{
+    background-image: url(../images/1.jpg);
+  }
+  25%{
+    background-image: url(../images/2.jpg);
+  }
+  50%{
+    background-image: url(../images/3.jpg);
+  }
+  75%{
+    background-image: url(../images/4.jpg);
+  }
+}
+header nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vh;
+  width: 100%;
+  position: fixed;
+  background-color: white;
+  box-shadow: 5px 5px 5px #888888;
+  z-index:9 ;
+}
+header nav .left-side{
+  flex: 1;
+}
+header nav .left-side h1{
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Sansita Swashed', cursive;
+  color: red;
+}
+header nav .right-side{
+  flex: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+header nav .right-side a{
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: black;
+  transition: all .5s ease;
+}
+header nav .right-side a:hover{
+  color: red;
+}
+header nav .right-side span a{
+  background-color: #a20a0a;
+  padding:1.4rem;
+  transition: all .5s ease;
+}
+header nav .right-side span a:hover{
+  color: white;
+  background-color: #f5b461;
+}
+header main .heading{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  top: 10rem;
+  padding-left: 5rem;
+}
+header  main .heading  h1{
+  font-size: 4rem;
+  font-weight: bold;
+  color: white;
+}
+header main .heading p{
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  margin-top: 0.5rem;
+}
+header main .heading a{
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  background-color: red;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  transition: all .5s ease;
+}
+header main .heading a:hover{
+  color: black;
+  background-color: orange;
+}
+/* header end */
+/* second section start */
+.second-sec{
+  background-color: rgb(233, 225, 210);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.second-sec .search-bar{
+  position: absolute;
+  background-color: white;
+  top: 32rem;
+  left: 17rem;
+}
+.second-sec .search-bar input[type=text]{
+  font-size: 1rem;
+  font-weight: bold;
+  border: black solid 2px;
+  width: 20rem;
+  height: 5rem;
+  text-align: center;
+} 
+.second-sec .search-bar a{
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  padding: 2rem;
+  transition: all .5s ease;
+  border: black solid 2px;
+}
+.second-sec .search-bar a:hover{
+  color: white;
+  background-color: red;
+}
+.second-sec .third .team-head{
+  text-align: center;
+  padding: 4rem;
+}
+.second-sec .third .team-head h1{
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+}
+.second-sec .third .team-head p{
+  font-weight: bold;
+  font-size: 1rem;
+}
+.second-sec  .team-info{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.second-sec .team-info .team-card{
+  width: 6rem;
+  height: auto;
+  text-align: center;
+}
+.second-sec .team-info  .team-card img{
+  width: 4rem;
+  height: 4rem;
+}
+.second-sec .team-info .team-card h1{
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.second-sec .intro{
+  padding: 5rem;
+  text-align: center;
+  background-color: #2d3f53;
+  color: white;
+}
+.second-sec .intro h1{
+  font-size: 2rem;
+  font-weight: bold;
+}
+.second-sec .intro p{
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.second-sec .photo img{
+  width: 100%;
+  height: auto;
+  background-size: contain;
+}
+/* second section end */
+/* work section */
+.work{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.work .work-1{
+  text-align: center;
+}
+.work .work-1 h1{
+  font-size: 2rem;
+  font-weight: bold;
+}
+.work .work-info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 80%;
+  margin-top: 2rem;
+}
+.work  .work-info .work-card{
+  width: 20rem;
+  height: auto;
+}
+.work  .work-info .work-card img{
+  width: 7rem;
+  height: auto;
+}
+.work  .work-info .work-card h4{
+  font-size: 1rem;
+  font-weight: bold;
+  color: #2d3f53;
+}
+.work  .work-info .work-card h2{
+  font-size: 2rem;
+  font-weight: bold;
+}
+.work  .work-info .work-card p{
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.work .work-2{
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #95afbf;
+}
+.work .work-2 h2{
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.work .work-2 p{
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+/* work section end */
+/* cabin section */
+.cabin{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e9e2d3;
+  padding-bottom: 2rem;
+}
+.cabin .cabin-heading{
+  text-align: center;
+}
+.cabin .cabin-heading h1{
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.cabin .cabin-info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.cabin .cabin-info .cabin-card{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 70%;
+  margin-top: 2rem;
+}
+.cabin .cabin-info .cabin-card img{
+  width: 35rem;
+  height: 15rem;
+  object-fit: contain;
+}
+.cabin .cabin-info .cabin-card .cabin-detail{
+  text-align: start;
+  margin-left: 1rem;
+}
+.cabin .cabin-info .cabin-card .cabin-detail h1{
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.cabin .cabin-info .cabin-card .cabin-detail p{
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+.cabin .cabin-info .cabin-card .cabin-detail a{
+  text-decoration: none;
+  color: white;
+  background-color: red;
+  padding: 1rem;
+  transition: all .5s ease;
+}
+.cabin .cabin-info .cabin-card .cabin-detail a:hover{
+  color: black;
+  background-color: orange;
+}
+.cabin .cabin-info .card-scroll a{
+  color: black;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem;
+  transition: all  .5s ease;
+}
+.cabin .card-scroll{
+  padding: 0;
+}
+.cabin .cabin-info .card-scroll a:hover{
+  background-color: red;
+  border-radius: 50%;
+  color: white;
+}
+.cabin .dots a i img{
+  width: 0.8rem;
+  height: auto;
+  margin-top: 1rem;
+}
+/* cabin section end */
+/* gallery section */
+.gallery{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.gallery .gallery-heading{
+  text-align: center;
+}
+.gallery .gallery-heading h1{
+  font-size: 2rem;
+  font-weight: bold;
+}
+.gallery .gallery-heading p{
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+.gallery .gallery-add{
+  text-align: center;
+}
+.gallery .gallery-add h2{
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.gallery  .gallery-add a{
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: all .5s ease;
+}
+.gallery .gallery-add a:hover{
+  color: red;
+  text-shadow: 7px 7px 5px #888888;
+}
+.gallery .images{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.gallery .images:hover{
+  cursor: zoom-in;
+}
+.gallery .images .images-struct{
+  max-width: 600px;
+  flex-flow: row wrap;
+}
+.gallery .images .images-struct .big{
+  width: 580px;
+  height: auto;
+}
+.gallery .images .images-struct img{
+  width: 290px;
+  height: auto;
+}
+.gallery .load-btn{
+  text-align: center;
+  margin-top: 2rem;
+}
+.gallery .load-btn a{
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+  transition: all .5s ease;
+}
+.gallery .load-btn a:hover{
+  color: red;
+  text-shadow: 7px 7px 5px #888888;
+}
+/* gallery section end */
+/* news section */
+.news{
+  background-color: #2d3f53;
+  padding: 2rem;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.news .news-info{
+  display: flex;
+  flex-direction: column;
+}
+.news .news-info p{
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.news .news-end{
+  text-align: end;
+  align-items: center;
+}
+.news .news-end a{
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  font-weight: bold;
+  transition: all .5s ease;
+  background-color: red;
+}
+.news .news-end a:hover{
+  background-color: orange;
+}
+/* news section end */
+/* map section */
+.map{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f6f4f2;
+}
+.map .map-heading{
+  text-align: center;
+  margin-top: 2rem;
+}
+.map .map-heading h1{
+  font-size: 2rem;
+  font-weight: bold;
+}
+/* map section end */
+/* faq section */
+.faq{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e9e2d3;
+  padding: 2rem;
+}
+.faq .faq-heading{
+  text-align: center;
+}
+.faq .faq-heading h1{
+  font-size: 2rem;
+  font-weight: bold;
+}
+.faq .faq-list{
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  position: relative;
+}
+.faq .faq-list .faq-card{
+  width: 50rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: black solid 1px;
+  border-bottom: black solid 1px;
+}
+.faq .faq-list  .drop{
+  background-color: #fff;
+  text-align: start;
+  height: 0;
+  opacity: 0;
+  transition: all .8s ease;
+}
+
+.faq .faq-list  .drop p{
+  margin-bottom: .8rem;
+  margin-left: 0.8rem;
+  margin-top: 0.8rem;
+}
+
+.faq .faq-list  .drop h3 {
+  margin-bottom: .8rem;
+  margin-left: 0.8rem;
+}
+
+.faq .faq-list  .drop ul {
+  list-style-position: inside;
+  margin-left: 0.8rem;
+  padding: .5rem;
+}
+
+.faq .faq-list  .drop ul li {
+  margin-bottom: .6rem;
+}
+
+.faq .faq-list input{
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+}
+#toggle:checked ~ .drop-1{
+  height: 320px;
+  opacity: 1;
+}
+/* faq section end */
+/* journal section */
+.journal{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+.journal .journal-heading{
+  text-align: center;
+}
+.journal .journal-heading h1{
+  font-size: 2rem;
+  font-weight: bold;
+}
+.journal .journal-info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-top: 1rem;
+}
+.journal .journal-info .journal-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25rem;
+  height: 38rem;
+  background-color: #f6f4f2;
+  padding: 0.5rem;
+}
+.journal .journal-info .journal-card img{
+  width: 100%;
+  height: auto;
+}
+.journal .journal-info .journal-card h1{
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+.journal .journal-info .journal-card p{
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+.journal .journal-info .journal-card a{
+  margin-top: 2rem;
+  text-decoration:underline red;
+  color: red;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.journal .read{
+  text-align: center;
+  margin-top: 2rem;
+}
+.journal .read a{
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: all .5s ease;
+}
+.journal .read a:hover{
+  color: red;
+  text-shadow: 7px 7px 5px #888888;
+}
+/* journal section end*/
+/* booking section */
+.booking{
+  padding: 4rem;
+  text-align: center;
+  background-color: #e9e2d3;
+}
+.booking  h1{
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.booking a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: red;
+  padding: 1rem;
+  transition: all .5s ease;
+}
+.booking a:hover{
+  background-color: orange;
+  color: black;
+}
+.contact{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #95afbf;
+  color: white;
+}
+.contact  .contact-photo{
+  width: 50%;
+}
+.contact .contact-photo img{
+  width: 100%;
+  height: auto;
+}
+.contact  .contact-info{
+  width: 50%;
+  padding: 2rem;
+  text-align: center;
+}
+.contact .contact-info h1{
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.contact .contact-info  p{
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.contact .contact-info  input{
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  border: white solid 1px;
+  width: 20rem;
+  height: 4rem;
+  background-color: #95afbf;
+  text-align: center;
+}
+/* booking section end */
+/* footer section */
+.end{
+  background-color: #2d3f53;
+}
+footer{
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 4rem;
+  background-color: #2d3f53;
+  color: white;
+}
+footer .first-col{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items:baseline;
+}
+footer .first-col h1{
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+footer .first-col a{
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top:1.5rem;
+  transition: all .5s ease;
+}
+footer .first-col a:hover{
+  color: red;
+  text-shadow: 7px 7px 5px #888888;
+}
+footer .sec-col{
+  align-items: baseline;
+}
+footer .sec-col input{
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: #2d3f53;
+  border: white solid 1px;
+  color: white;
+  width: 20rem;
+  height: 4rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+footer .sec-col a{
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  margin: 0.5rem;
+  transition: all .5s ease;
+}
+footer .sec-col a:hover{
+  color: red;
+  text-shadow: 7px 7px 5px #888888;
+}
+/* footer section end */
+/* media quarries */
+@media(max-width:1434px){
+  header{
+    background-size: cover;
+    object-fit: contain;
+  }
+  .news .news-info p{
+    width: 50%;
+  }
+  .news .news-end{
+    width: 50%;
+  }
+}
+
+@media(max-width:1400px){
+  .second-sec .search-bar{
+    left: 11rem;
+  }
+}
+@media(max-width:1200px){
+  .second-sec .search-bar{
+  display: none;
+  }
+  .gallery  .images  .images-struct{
+    max-width: 400px;
+    flex-flow: row wrap;
+  }
+  .gallery .images .images-struct .big{
+    width: 380px;
+    height: auto;
+  }
+  .gallery .images .images-struct img{
+    width: 180px;
+    height: auto;
+  }
+  .work .work-info{
+    width: 100%;
+  }
+  .cabin .cabin-info .cabin-card img{
+    width: 25rem;
+    height: auto;
+  }
+
+}
+@media(max-width:1098px){
+  .map .map-photo img{
+    width: 40rem;
+    height: auto;
+  }
+  .cabin .cabin-info .cabin-card img{
+    width: 15rem;
+    height: auto;
+  }
+  .cabin .dots a i img{
+    margin-top: 2rem;
+  }
+}
+@media(max-width:1000px){
+  header{
+    background-size: cover;
+    object-fit: contain;
+  }
+  header nav{
+    height: 6vh;
+  }
+  header nav .right-side a{
+    font-size: 0.5rem;
+  }
+  header nav .right-side span a{
+    padding: 0.8rem;
+  }
+  .second-sec .search-bar input[type=text]{
+    width: 10rem;
+    height: 4rem;
+    text-align: start;
+  }
+  .second-sec .search-bar a{
+    padding: 1rem;
+  }
+  .work  .work-info .work-card p{
+    font-size: 0.6rem;
+    width: 80%;
+  }
+  .work  .work-info .work-card h2{
+    font-size: 1rem;
+  }
+  footer .first-col  h1{
+    font-size: 0.8rem;
+  }
+  footer .first-col a{
+    font-size: 0.6rem;
+  }
+  footer .sec-col input{
+    width: 10rem;
+  }
+  footer  .sec-col a{
+    font-size: 1rem;
+  }
+}
+@media(max-width:800px){
+  .faq .faq-list{
+    align-items: center;
+    justify-content: center;
+  }
+  .faq .faq-list .faq-card{
+    width: 500px;
+  }
+  .journal .journal-info .journal-card{
+    width:30rem;
+    height:34rem;
+  }
+  .booking h1{
+    font-size: 1.5rem;
+  }
+  .contact .contact-info h1{
+    font-size: 1.5rem;
+  }
+  .contact .contact-info p{
+    font-size: 1rem;
+  }
+  .contact  .contact-info  input{
+    font-size: 1rem;
+    width: 12rem;
+    height: 3rem;
+  }
+  footer{
+    justify-content: space-between;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  footer .sec-col  input{
+    font-size: 1rem;
+    width: 10rem;
+    height: 3rem;
+  }
+}
+@media(max-width:770px){
+  header main .heading h1{
+    font-size: 2rem;
+  }
+  header main .heading  p{
+    font-size: 1rem;
+  }
+  header main .heading a{
+    font-size: 1.4rem;
+    padding: 0.6rem;
+  }
+  .second-sec .third{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .second-sec  .third .team-info{
+    padding: 0.5rem;
+    max-width: 300px;
+    justify-content: space-around;
+    flex-flow: row wrap;
+  }
+  .second-sec .third .team-info .team-card{
+    margin: auto;
+    align-items: baseline;
+  }
+  .gallery .images{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .gallery .images .images-struct{
+    max-width: 500px;
+  }
+  .gallery .images .images-struct .big{
+    width: 480px;
+  }
+  .gallery .images .images-struct img{
+    width: 240px;
+  }
+}
+@media(max-width:650px){
+  .cabin .cabin-info .cabin-card .cabin-detail h1{
+    font-size: 1.2rem;
+  }
+  .cabin .cabin-info .cabin-card .cabin-detail p{
+    font-size: .8rem;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+  .cabin .cabin-info .cabin-card .cabin-detail  a{
+    font-size: .8rem;
+    padding: 0.5rem;
+  }
+  .map .map-photo img{
+    width: 400px;
+    height: auto;
+  }
+  .news .news-info p{
+    font-size: 1rem;
+  }
+}
+@media(max-width:600px){
+  header nav .left-side{
+    flex: 0;
+  }
+  header nav .left-side h1{
+    font-size: 1rem;
+  }
+  .second-sec .search-bar{
+    display: none;
+  }
+  .work .work-info{
+    max-width: 300px;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .work .work-info .work-card{
+    text-align: center;
+  }
+  .work .work-info .work-card p{
+    width: 100%;
+  }
+  .cabin .cabin-info .cabin-card img{
+    width: 10rem;
+  }
+  .cabin .cabin-info .cabin-card .cabin-detail h1{
+    font-size: 0.8rem;
+  }
+  .cabin .cabin-info .cabin-card .cabin-detail p{
+    font-size: 0.6rem;
+  }
+  .faq .faq-list .faq-card{
+    width: 300px;
+  }
+  .faq .faq-list .faq-card h1{
+    font-size: 1rem;
+  }
+  .faq .faq-list .drop{
+    width: 320px;
+  }
+  .faq .faq-list .drop p{
+    margin-top: 0.5rem;
+    font-size: 0.5rem;
+  }
+  .faq .faq-list  .drop ul li {
+    font-size: 0.5rem;
+  }
+  .journal .journal-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .journal .journal-info .journal-card{
+    width: 340px;
+    height: auto;
+    width: 100%;
+  }
+
+  footer .first-col{
+    display: flex;
+    flex-direction: column;
+    width: 5rem;
+  }
+  footer  .sec-col{
+    width: 10rem;
+  }
+  footer .sec-col input{
+    width: 8rem;
+    font-size: 0.8rem;
+  }
+  
+}
+@media(max-width:500px){
+  header{
+    background-size: cover;
+    object-fit: contain;
+  }
+  header nav .right-side{
+    justify-content: space-between;
+  }
+  header nav .right-side a{
+    letter-spacing: 0;
+    font-size: 0.6rem;
+    font-weight: bold;
+  }
+  header main .heading{
+    left: 0;
+    padding: 0;
+  }
+  .news .news-info p{
+    font-size: 0.8rem;
+  }
+  .news .news-end a{
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+  .gallery .images .images-struct{
+    max-width: 300px;
+    margin-top: 1rem;
+  }
+  .gallery .images .images-struct .big{
+    width: 300px;
+    height: auto;
+  }
+  .gallery .images .images-struct img{
+    width: 140px;
+  }
+  .work .work-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .work .work-2 h1{
+    font-size: 1rem;
+  }
+  .work .work-2 p{
+    margin-top: 1rem;
+    font-size: 0.8rem;
+  }
+  .cabin .cabin-info .cabin-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .cabin .cabin-info .cabin-card .cabin-detail{
+    text-align: center;
+  }
+}
+@media(max-width:410px){
+  header{
+    background-size: cover;
+    object-fit: cover;
+  }
+  header  nav {
+    height: 8vh;
+  }
+  header nav .right-side{
+    max-width: 200px;
+    flex-flow: row wrap;
+  }
+  header nav .right-side a{
+    margin: 0.5rem;
+  }
+  header nav .right-side span a{
+    display: none;
+  }
+  .second-sec .third .team-head{
+    padding: 2rem;
+  }
+  .second-sec .third .team-head h1{
+    font-size: 1rem;
+  }
+  .second-sec .third .team-head p{
+    font-size: 0.6rem;
+  }
+  .second-sec .intro{
+    padding: 2rem;
+  }
+  .second-sec .intro h1{
+    font-size: 1rem;
+  }
+  .second-sec .intro p{
+    font-size: 0.8rem;
+  }
+  .gallery .gallery-heading h1{
+    font-size: 1.2rem;
+  }
+  .gallery .gallery-heading p{
+    font-size: 0.8rem;
+  }
+  .gallery .gallery-add h2{
+    font-size: 0.9rem;
+  }
+  .gallery .gallery-add a{
+    font-size: 1rem;
+  }
+  .gallery .load-btn a{
+    font-size: 1rem;
+  }
+  .news{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .news .news-info{
+    width: 50%;
+    align-items: baseline;
+  }
+  .news .news-info p{
+    width: 10rem;
+  }
+  .map .map-photo img{
+    width: 250px;
+  }
+  .end{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact .contact-info{
+    padding: 0;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .contact .contact-info h1{
+    font-size: 0.8rem;
+  }
+  .contact .contact-info p{
+    font-size: 0.5rem;
+  }
+  .contact .contact-info  input{
+    width: 5rem;
+    height: 2rem;
+    font-size: 0.6rem;
+  }
+  footer{
+    max-width: 300px;
+    flex-flow: row wrap;
+  }
+  footer .sec-col{
+    margin-top: 1rem;
+    width: 100%;
+    text-align: center;
+  }
+  footer .sec-col input{
+    width: 100%;
+  }
+}
+@media(max-width:350px){
+  .faq .faq-list .faq-card{
+    width: 200px;
+  }
+  .faq .faq-list .drop{
+    width: 220px;
+  }
+  .booking{
+    padding: 2rem;
+  }
+  .booking h1{
+    font-size: 1rem;
+  }
+  .booking a{
+    font-size: 0.8rem;
+    padding: 0.5rem;
+  }
+}
+  @media(max-width:300px){
+  .gallery .images .images-struct{
+    max-width: 200px;
+    text-align: center;
+  }
+  .gallery .images .images-struct .big{
+    width: 180px;
+  }
+  .gallery .images .images-struct img{
+    width: 90px;
+  }
+  .news{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .news .news-end {
+    margin-top: 2rem;
+  }
+  }
+@media(max-width:250px){
+  .cabin .cabin-info .card-scroll a{
+    padding: 0;
+  }
+}
